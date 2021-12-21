@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking | Page</title>
+    <link rel="stylesheet" href="../styles/booknow.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+    <script defer src="../app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c046d5c77d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Nav section -->
+    <header class="header">
+      <img
+        src="../Assets/hotel4.svg"
+        style="width: 100px"
+        alt="nav logo"
+        class="logo"
+      />
+      <button
+        class="btn mobile_nav_control"
+        aria-controls="primary_nav_control"
+        aria-expanded="false"
+      ></button>
+
+      <nav>
+        <ul class="primary_nav_control nav_links flex1" data-visible="false">
+          <li class="active nav_list">
+            <a href="#" id="section--1" class="nav_link">Home</a>
+          </li>
+          <li class="nav_list">
+            <a href="../components/About.html" id="section--2" class="nav_link"
+              >About</a
+            >
+          </li>
+          <li class="nav_list">
+            <a
+              href="../components/contactus.html"
+              id="section--3"
+              class="nav_link"
+              >Contact</a
+            >
+          </li>
+          <li class="nav_list">
+            <a
+              href="../components/booknow.html"
+              id="section--4"
+              class="nav_link"
+              >Book now</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- <h2>booing Page</h2> -->
+    <div class="main__content">
+      <section class="book__section">
+        <div class="main-section">
+          <h2 class="book_title">book your room</h2>
+          <form action="" class="form form-grid pad_left_right pad_top_bottom">
+            <div class="check__in grid">
+              <label for="Checkin" name="form_text">Check in</label>
+              <input type="date" class="input-area" />
+            </div>
+            <div class="check_out grid">
+              <label for="Checkout" name="form_text">Check out</label>
+              <input type="date" class="input-area" />
+            </div>
+            <div class="guest_option grid">
+              <label for="Guests" name="form_text">Guests</label>
+              <select name="guest" class="input-area" id="guest">
+                <option value="1">1 adults</option>
+                <option value="2">2 adults</option>
+                <option value="3">3 adults</option>
+                <option value="4">5 adults</option>
+                <option value="5">1 child</option>
+                <option value="6">2 children</option>
+                <option value="7">3 children</option>
+                <option value="8">1 friends</option>
+                <option value="9">2 friends</option>
+                <option value="20">3 friends</option>
+              </select>
+            </div>
+            <div class="room_no grid">
+              <label for="Room no" name="form_text">Room no</label>
+              <select name="guest" class="input-area" id="guest">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="20">10</option>
+              </select>
+            </div>
+            <button class="bookBtn">Book Now</button>
+          </form>
+        </div>
+      </section>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <ul>
+        <li class="icons-list">
+          <a href="#" class="links1">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="#" class="links2">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="links3">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

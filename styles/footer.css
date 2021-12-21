@@ -1,0 +1,16 @@
+footer {
+  background-color: #18a0fb;
+  padding-block-end: 0.5rem;
+  padding-block-start: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icons-list {
+  max-width: 30%;
+  display: flex;
+  gap: 1em;
+}
+.icons-list a i {
+  color: white;
+}

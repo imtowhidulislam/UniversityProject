@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  /* background-image: url("http://unsplash.it/1980/1000?image=932"); */
+
+  background-image: linear-gradient(
+    rgb(204, 90, 90),
+    rgb(253, 75, 179),
+    rgb(201, 207, 205)
+  );
+  font-family: poppins;
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 9999;
+}
+.logo {
+  margin: 2rem;
+}
+.flex1 {
+  display: flex;
+  /* margin-block-end: 1rem; */
+}
+.nav_list + .nav_list {
+  /* background-color: red; */
+  margin-left: 1rem;
+}
+.primary_nav_control {
+  display: flex;
+  /* background-color: yellow; */
+  /* margin-inline-end: 2rem; */
+  /* margin-inline-start: 2rem; */
+  background-color: hsl(0 0% 0% / 0.4);
+}
+@supports (backdrop-filter: blur(1rem)) {
+  .primary_nav_control {
+    backdrop-filter: blur(0.75rem);
+    padding-block: 1rem;
+    padding-inline: 2rem;
+  }
+}
+.primary_nav_control a {
+  color: white;
+  font-size: 1rem;
+}
+.mobile_nav_control {
+  display: none;
+}
+@media (max-width: 35rem) {
+  .primary_nav_control {
+    position: fixed;
+    flex-direction: column;
+    inset: 0 0 0 30%;
+    padding: min(30vh, 7rem) 2rem;
+    /* opacity: 0; */
+    transform: translateX(100%);
+    transition: transform 400ms ease-in-out;
+  }
+
+  .primary_nav_control[data-visible="true"] {
+    transform: translateX(0%);
+    opacity: 1;
+    /* transition: opacity 400ms ease-in; */
+  }
+
+  .mobile_nav_control {
+    display: block;
+    position: absolute;
+    aspect-ratio: 1;
+    width: 2rem;
+    top: 2rem;
+    right: 2rem;
+    border: none;
+    background: transparent;
+    z-index: 9999;
+    background-image: url("./Assets/bars-solid.svg");
+    background-repeat: no-repeat;
+  }
+  .nav_list + .nav_list {
+    margin: 0;
+    margin-top: 1rem;
+  }
+  .cross {
+    /* width: 3rem; */
+    background: url("./Assets/times-solid.svg");
+    background-repeat: no-repeat;
+  }
+}
